@@ -1,0 +1,9 @@
+.azureml
+cache
+explanation
+logs
+outputs
+script/__pycache__
+
+automl.log
+config.json
