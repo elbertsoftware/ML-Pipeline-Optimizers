@@ -1,0 +1,253 @@
+2020/11/23 05:36:46 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/info
+2020/11/23 05:36:47 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/status
+[2020-11-23T05:36:48.334485] Entering context manager injector.
+[context_manager_injector.py] Command line Options: Namespace(inject=['ProjectPythonPath:context_managers.ProjectPythonPath', 'RunHistory:context_managers.RunHistory', 'TrackUserError:context_managers.TrackUserError'], invocation=['automl_driver.py'])
+Script type = None
+Starting the daemon thread to refresh tokens in background for process with pid = 108
+Entering Run History Context Manager.
+Current directory:  /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-127478/azureml/automl_49deb76b-aff8-43f2-918b-fe7d865e3de8_55/mounts/workspaceblobstore/azureml/AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55
+Preparing to call script [ automl_driver.py ] with arguments: []
+After variable expansion, calling script [ automl_driver.py ] with arguments: []
+
+Starting the automl_driver setup...
+Set enable_streaming flag to False
+run_id in the real script:  AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55
+2020-11-23 05:36:54,841044 - INFO - Beginning driver wrapper.
+2020-11-23 05:36:54.906 - INFO - Changing AutoML temporary path to current working directory.
+WARNING - Received unrecognized parameter environment_label
+2020-11-23 05:36:55.489 - INFO - Successfully got the cache data store, caching enabled.
+2020-11-23 05:36:55.489 - INFO - Took 0.5763912200927734 seconds to retrieve cache data store
+2020-11-23 05:36:55.703 - INFO - ActivityStarted: load
+2020-11-23 05:36:55.834 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:36:55.834 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:36:56.030 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:36:56.030 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=195.41[ms]
+2020-11-23 05:36:56.036 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=333.02[ms]
+2020-11-23 05:36:56.037 - INFO - ActivityStarted: load
+2020-11-23 05:36:56.046 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:36:56.046 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:36:56.116 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:36:56.117 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=70.06[ms]
+2020-11-23 05:36:56.123 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=86.2[ms]
+2020-11-23 05:36:56.123 - INFO - Getting ['dataset_cached_object'] from Azure file store cache
+2020-11-23 05:36:56.124 - INFO - ActivityStarted: get
+2020-11-23 05:36:56.124 - INFO - Getting data for key: dataset_cached_object
+2020-11-23 05:36:56.159 - INFO - Feature sweeping enabled: False
+2020-11-23 05:36:56.160 - INFO - Feature sweeping timeout: 86400
+2020-11-23 05:36:56.262 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=138.05[ms]
+2020-11-23 05:36:56.262 - INFO - Successfully loaded the AutoML Dataset from cache.
+2020-11-23 05:36:59.697 - INFO - Embeddings download time: 0.03258099999999997
+2020-11-23 05:36:59.760 - INFO - Beginning the training iteration for run AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55.
+2020-11-23 05:36:59.761 - INFO - Using child run AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55
+2020-11-23 05:36:59.762 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55]CPU logical cores: 2, CPU cores: 2, virtual memory: 7284367360, swap memory: 0.
+2020-11-23 05:36:59.762 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55]Platform information: Linux.
+2020-11-23 05:36:59.784 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Starting fit_pipeline]memory usage 264048640
+2020-11-23 05:36:59.785 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Starting fit_pipeline]child memory usage 264048640
+2020-11-23 05:36:59.785 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Starting fit_pipeline]cpu time 3.392575
+2020-11-23 05:36:59.786 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Starting fit_pipeline]child cpu time 0.061144
+2020-11-23 05:36:59.786 - INFO - Component PrepareData finished after 0.00040545 minutes.
+2020-11-23 05:36:59.800 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Before executing pipeline]memory usage 265515008
+2020-11-23 05:36:59.800 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Before executing pipeline]child memory usage 265515008
+2020-11-23 05:36:59.800 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Before executing pipeline]cpu time 3.400379
+2020-11-23 05:36:59.801 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][Before executing pipeline]child cpu time 0.061144
+2020-11-23 05:36:59.801 - INFO - ActivityStarted: RunPipeline
+2020-11-23 05:36:59.960 - INFO - Limiting disabled.
+2020-11-23 05:36:59.961 - INFO - ActivityStarted: Run
+2020-11-23 05:36:59.962 - INFO - ActivityStarted: load
+2020-11-23 05:37:00.035 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:00.036 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:00.115 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:00.115 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=79.23[ms]
+2020-11-23 05:37:00.121 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=159.82[ms]
+2020-11-23 05:37:00.121 - INFO - Getting ['dataset_cached_keys'] from Azure file store cache
+2020-11-23 05:37:00.122 - INFO - ActivityStarted: get
+2020-11-23 05:37:00.122 - INFO - Getting data for key: dataset_cached_keys
+2020-11-23 05:37:00.200 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=78.39[ms]
+2020-11-23 05:37:00.200 - INFO - Getting ['X', 'featurized train CV splits', 'class_labels', 'y', 'train CV splits'] from Azure file store cache
+2020-11-23 05:37:00.200 - INFO - ActivityStarted: get
+2020-11-23 05:37:00.200 - INFO - Getting data for key: X
+2020-11-23 05:37:00.507 - INFO - Getting data for key: featurized train CV splits
+2020-11-23 05:37:00.537 - INFO - Getting data for key: class_labels
+2020-11-23 05:37:00.613 - INFO - Getting data for key: y
+2020-11-23 05:37:00.646 - INFO - Getting data for key: train CV splits
+2020-11-23 05:37:00.719 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=519.0[ms]
+2020-11-23 05:37:00.720 - INFO - ActivityStarted: RunCV
+2020-11-23 05:37:00.720 - INFO - ActivityStarted: load
+2020-11-23 05:37:00.796 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:00.796 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:00.865 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:00.865 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=68.91[ms]
+2020-11-23 05:37:00.873 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=152.37[ms]
+2020-11-23 05:37:00.873 - INFO - Getting ['featurized_cv_split_0'] from Azure file store cache
+2020-11-23 05:37:00.873 - INFO - ActivityStarted: get
+2020-11-23 05:37:00.874 - INFO - Getting data for key: featurized_cv_split_0
+2020-11-23 05:37:01.472 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=598.11[ms]
+2020-11-23 05:37:01.473 - INFO - ActivityStarted: TimeFit
+2020-11-23 05:37:04.443 - INFO - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=2970.63[ms]
+2020-11-23 05:37:04.448 - INFO - ActivityStarted: Predict
+2020-11-23 05:37:04.482 - INFO - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=34.19[ms]
+2020-11-23 05:37:04.483 - INFO - ActivityStarted: ComputeMetrics
+2020-11-23 05:37:04.485 - INFO - Classification metrics debug: {'y_test': (6590,), 'y_pred_probs': (6590, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2020-11-23 05:37:04.587 - INFO - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=103.95[ms]
+2020-11-23 05:37:04.588 - INFO - ActivityStarted: load
+2020-11-23 05:37:04.596 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:04.597 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:04.667 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:04.668 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=70.62[ms]
+2020-11-23 05:37:04.674 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=86.3[ms]
+2020-11-23 05:37:04.675 - INFO - Getting ['featurized_cv_split_1'] from Azure file store cache
+2020-11-23 05:37:04.675 - INFO - ActivityStarted: get
+2020-11-23 05:37:04.676 - INFO - Getting data for key: featurized_cv_split_1
+2020-11-23 05:37:04.972 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=296.43[ms]
+2020-11-23 05:37:04.973 - INFO - ActivityStarted: TimeFit
+2020-11-23 05:37:07.997 - INFO - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=3023.43[ms]
+2020-11-23 05:37:08.001 - INFO - ActivityStarted: Predict
+2020-11-23 05:37:08.037 - INFO - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=35.21[ms]
+2020-11-23 05:37:08.037 - INFO - ActivityStarted: ComputeMetrics
+2020-11-23 05:37:08.039 - INFO - Classification metrics debug: {'y_test': (6590,), 'y_pred_probs': (6590, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2020-11-23 05:37:08.141 - INFO - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=103.82[ms]
+2020-11-23 05:37:08.142 - INFO - ActivityStarted: load
+2020-11-23 05:37:08.150 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:08.151 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:08.230 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:08.230 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=79.29[ms]
+2020-11-23 05:37:08.236 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=93.92[ms]
+2020-11-23 05:37:08.236 - INFO - Getting ['featurized_cv_split_2'] from Azure file store cache
+2020-11-23 05:37:08.236 - INFO - ActivityStarted: get
+2020-11-23 05:37:08.236 - INFO - Getting data for key: featurized_cv_split_2
+2020-11-23 05:37:08.540 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=303.83[ms]
+2020-11-23 05:37:08.541 - INFO - ActivityStarted: TimeFit
+2020-11-23 05:37:11.574 - INFO - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=3032.89[ms]
+2020-11-23 05:37:11.579 - INFO - ActivityStarted: Predict
+2020-11-23 05:37:11.613 - INFO - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=34.3[ms]
+2020-11-23 05:37:11.614 - INFO - ActivityStarted: ComputeMetrics
+2020-11-23 05:37:11.616 - INFO - Classification metrics debug: {'y_test': (6590,), 'y_pred_probs': (6590, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2020-11-23 05:37:11.719 - INFO - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=104.82[ms]
+2020-11-23 05:37:11.720 - INFO - ActivityStarted: load
+2020-11-23 05:37:11.728 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:11.729 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:11.799 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:11.799 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=70.59[ms]
+2020-11-23 05:37:11.805 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=85.81[ms]
+2020-11-23 05:37:11.805 - INFO - Getting ['featurized_cv_split_3'] from Azure file store cache
+2020-11-23 05:37:11.806 - INFO - ActivityStarted: get
+2020-11-23 05:37:11.806 - INFO - Getting data for key: featurized_cv_split_3
+2020-11-23 05:37:12.118 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=312.3[ms]
+2020-11-23 05:37:12.119 - INFO - ActivityStarted: TimeFit
+2020-11-23 05:37:15.084 - INFO - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=2964.14[ms]
+2020-11-23 05:37:15.088 - INFO - ActivityStarted: Predict
+2020-11-23 05:37:15.111 - INFO - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=22.54[ms]
+2020-11-23 05:37:15.111 - INFO - ActivityStarted: ComputeMetrics
+2020-11-23 05:37:15.112 - INFO - Classification metrics debug: {'y_test': (6590,), 'y_pred_probs': (6590, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2020-11-23 05:37:15.213 - INFO - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=101.92[ms]
+2020-11-23 05:37:15.214 - INFO - ActivityStarted: load
+2020-11-23 05:37:15.222 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:15.223 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:15.317 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:15.317 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=94.77[ms]
+2020-11-23 05:37:15.324 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=110.06[ms]
+2020-11-23 05:37:15.324 - INFO - Getting ['featurized_cv_split_4'] from Azure file store cache
+2020-11-23 05:37:15.325 - INFO - ActivityStarted: get
+2020-11-23 05:37:15.325 - INFO - Getting data for key: featurized_cv_split_4
+2020-11-23 05:37:15.590 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=265.61[ms]
+2020-11-23 05:37:15.592 - INFO - ActivityStarted: TimeFit
+2020-11-23 05:37:18.600 - INFO - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=3008.7[ms]
+2020-11-23 05:37:18.605 - INFO - ActivityStarted: Predict
+2020-11-23 05:37:18.640 - INFO - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=34.8[ms]
+2020-11-23 05:37:18.641 - INFO - ActivityStarted: ComputeMetrics
+2020-11-23 05:37:18.642 - INFO - Classification metrics debug: {'y_test': (6590,), 'y_pred_probs': (6590, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2020-11-23 05:37:18.760 - INFO - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=119.18[ms]
+2020-11-23 05:37:18.760 - INFO - ActivityCompleted: Activity=RunCV, HowEnded=Success, Duration=18040.8[ms]
+2020-11-23 05:37:18.761 - INFO - ActivityStarted: RunCVMean
+2020-11-23 05:37:18.768 - INFO - ActivityCompleted: Activity=RunCVMean, HowEnded=Success, Duration=7.16[ms]
+2020-11-23 05:37:18.769 - INFO - Getting ['dataset_cached_keys'] from Azure file store cache
+2020-11-23 05:37:18.769 - INFO - ActivityStarted: get
+2020-11-23 05:37:18.769 - INFO - Getting data for key: dataset_cached_keys
+2020-11-23 05:37:18.770 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.14[ms]
+2020-11-23 05:37:18.856 - INFO - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=18894.75[ms]
+2020-11-23 05:37:18.857 - INFO - Limiting disabled.
+2020-11-23 05:37:18.857 - INFO - ActivityStarted: Run
+2020-11-23 05:37:18.858 - INFO - ActivityStarted: load
+2020-11-23 05:37:18.869 - INFO - Loading the saved_as object from cache.
+2020-11-23 05:37:18.869 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2020-11-23 05:37:18.960 - INFO - Loaded saved_as file. The saved_as object is: {'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_3': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_4': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.NUMPY: 2>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'x_raw_column_names': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits_indices': <_SavedAsProtocol.PICKLE: 1>, 'transformers': <_SavedAsProtocol.PICKLE: 1>, 'cv_splits': <_SavedAsProtocol.PICKLE: 1>, '_on_demand_pickle_keys': <_SavedAsProtocol.PICKLE: 1>, 'timeseries': <_SavedAsProtocol.PICKLE: 1>, 'timeseries_param_dict': <_SavedAsProtocol.PICKLE: 1>, 'data_snapshot_str': <_SavedAsProtocol.PICKLE: 1>, 'class_labels': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2020-11-23 05:37:18.960 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=90.59[ms]
+2020-11-23 05:37:18.966 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=108.62[ms]
+2020-11-23 05:37:18.966 - INFO - Getting ['dataset_cached_keys'] from Azure file store cache
+2020-11-23 05:37:18.967 - INFO - ActivityStarted: get
+2020-11-23 05:37:18.967 - INFO - Getting data for key: dataset_cached_keys
+2020-11-23 05:37:18.967 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.77[ms]
+2020-11-23 05:37:18.967 - INFO - Getting ['X', 'featurized train CV splits', 'class_labels', 'y', 'train CV splits'] from Azure file store cache
+2020-11-23 05:37:18.969 - INFO - ActivityStarted: get
+2020-11-23 05:37:18.969 - INFO - Getting data for key: X
+2020-11-23 05:37:18.973 - INFO - Getting data for key: featurized train CV splits
+2020-11-23 05:37:18.974 - INFO - Getting data for key: class_labels
+2020-11-23 05:37:18.975 - INFO - Getting data for key: y
+2020-11-23 05:37:18.976 - INFO - Getting data for key: train CV splits
+2020-11-23 05:37:18.977 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=7.91[ms]
+2020-11-23 05:37:18.977 - INFO - ActivityStarted: TrainFull
+2020-11-23 05:37:18.978 - INFO - ActivityStarted: TimeFit
+2020-11-23 05:37:22.851 - INFO - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=3872.89[ms]
+2020-11-23 05:37:22.856 - INFO - ActivityStarted: Predict
+2020-11-23 05:37:22.958 - INFO - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=101.19[ms]
+2020-11-23 05:37:22.958 - INFO - ActivityStarted: ComputeMetrics
+2020-11-23 05:37:22.960 - INFO - Classification metrics debug: {'y_test': (32950,), 'y_pred_probs': (32950, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2020-11-23 05:37:23.322 - INFO - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=363.2[ms]
+2020-11-23 05:37:23.322 - INFO - ActivityCompleted: Activity=TrainFull, HowEnded=Success, Duration=4344.98[ms]
+2020-11-23 05:37:23.323 - INFO - Getting ['dataset_cached_keys'] from Azure file store cache
+2020-11-23 05:37:23.323 - INFO - ActivityStarted: get
+2020-11-23 05:37:23.324 - INFO - Getting data for key: dataset_cached_keys
+2020-11-23 05:37:23.324 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.09[ms]
+2020-11-23 05:37:23.426 - INFO - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=4569.18[ms]
+2020-11-23 05:37:23.428 - INFO - ActivityCompleted: Activity=RunPipeline, HowEnded=Success, Duration=23626.12[ms]
+2020-11-23 05:37:23.428 - INFO - Pipeline execution finished with a score of 0.9166009104704097
+2020-11-23 05:37:23.451 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][After executing pipeline]memory usage 442957824
+2020-11-23 05:37:23.452 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][After executing pipeline]child memory usage 442957824
+2020-11-23 05:37:23.452 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][After executing pipeline]cpu time 23.76211
+2020-11-23 05:37:23.452 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][After executing pipeline]child cpu time 0.061144
+2020-11-23 05:37:23.453 - INFO - ActivityStarted: MetricsAndSaveModel
+2020-11-23 05:37:24.244 - INFO - Updating child run properties with model name AutoML49deb76ba55 and size 213821 bytes.
+2020-11-23 05:37:24.338 - INFO - ActivityCompleted: Activity=MetricsAndSaveModel, HowEnded=Success, Duration=885.34[ms]
+2020-11-23 05:37:24.854 - INFO - run_id:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55, pipeline_id:1f287694bba0cb2dd0259bac97f6b6a4b0c1bb00,The following metrics have been logged for the child run: {'f1_score_micro': 0.9166009104704097, 'average_precision_score_weighted': 0.9557045367739251, 'average_precision_score_macro': 0.8252885062209803, 'AUC_weighted': 0.948525007931335, 'AUC_macro': 0.948525007931335, 'f1_score_weighted': 0.9129729360712899, 'recall_score_weighted': 0.9166009104704097, 'precision_score_macro': 0.7995185993840632, 'balanced_accuracy': 0.7513858464546403, 'log_loss': 0.17522935201019255, 'recall_score_micro': 0.9166009104704097, 'accuracy': 0.9166009104704097, 'f1_score_macro': 0.7724227048166183, 'AUC_micro': 0.9809988578823388, 'precision_score_micro': 0.9166009104704097, 'confusion_matrix': <class 'dict'>, 'weighted_accuracy': 0.9576403970547777, 'average_precision_score_micro': 0.9818084120250476, 'accuracy_table': <class 'dict'>, 'precision_score_weighted': 0.9108925226657242, 'recall_score_macro': 0.7513858464546403, 'norm_macro_recall': 0.5027716929092809, 'matthews_correlation': 0.5487393668520066, 'fit_time': 2.9997448, 'train time': 3.036471, 'predict_time': 0.0367262}.
+2020-11-23 05:37:24.854 - INFO - Bypassing model explanations as the explanations for the best run will be performed during training
+2020-11-23 05:37:25.518 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][End fit_pipeline]memory usage 447025152
+2020-11-23 05:37:25.519 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][End fit_pipeline]child memory usage 447025152
+2020-11-23 05:37:25.519 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][End fit_pipeline]cpu time 24.058795
+2020-11-23 05:37:25.520 - INFO - [RunId:AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55][End fit_pipeline]child cpu time 0.149082
+2020-11-23 05:37:25.520 - INFO - Marking the Run AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55 as Completed.
+2020-11-23 05:37:25.521 - INFO - ActivityStarted: SetRunStatusToComplete
+2020-11-23 05:37:25.521 - INFO - Marking Run AutoML_49deb76b-aff8-43f2-918b-fe7d865e3de8_55 as Completed.
+2020-11-23 05:37:31.295 - INFO - ActivityCompleted: Activity=SetRunStatusToComplete, HowEnded=Success, Duration=5773.77[ms]
+2020-11-23 05:37:31.295 - INFO - Child run completed with accuracy=0.9166009104704097 after 3.036471 seconds.
+{'staticProperties': {}, 'score': 0.9166009104704097, 'run_properties': '<azureml.automl.runtime.shared.model_wrappers.StandardScalerWrapper object at 0x7ff6c2b27cc0', 'pipeline_script': '{"objects": [{"class_name": "StandardScaler", "module": "sklearn.preprocessing", "param_args": [], "param_kwargs": {"with_mean": false, "with_std": false}, "prepared_kwargs": {}, "spec_class": "preproc"}, {"class_name": "XGBoostClassifier", "module": "automl.client.core.common.model_wrappers", "param_args": [], "param_kwargs": {"booster": "gbtree", "colsample_bytree": 1, "eta": 0.2, "gamma": 0.1, "max_depth": 6, "max_leaves": 3, "n_estimators": 50, "objective": "reg:logistic", "reg_alpha": 0, "reg_lambda": 1.7708333333333335, "subsample": 0.9, "tree_method": "auto"}, "prepared_kwargs": {}, "spec_class": "sklearn"}], "pipeline_id": "1f287694bba0cb2dd0259bac97f6b6a4b0c1bb00", "module": "sklearn.pipeline", "class_name": "Pipeline", "pipeline_name": "{ StandardScaler, XGBoostClassifier }"}', 'pipeline_id': '1f287694bba0cb2dd0259bac97f6b6a4b0c1bb00', 'training_type': 'MeanCrossValidation', 'num_classes': None, 'framework': 'sklearn', 'predicted_time': 0.0, 'fit_time': 3.036471, 'goal': 'accuracy_max', 'class_labels': None, 'primary_metric': 'accuracy', 'errors': {}, 'fitted_pipeline': Pipeline(memory=None,
+         steps=[('datatransformer',
+                 DataTransformer(allow_chargram=None, enable_dnn=None,
+                                 enable_feature_sweeping=None,
+                                 feature_sweeping_config=None,
+                                 feature_sweeping_timeout=None,
+                                 featurization_config=None, force_text_dnn=None,
+                                 is_cross_validation=None,
+                                 is_onnx_compatible=None, logger=None,
+                                 observer=None, task=None, working_dir=None)),
+                ('StandardSca...
+                                   colsample_bytree=1, eta=0.2, gamma=0.1,
+                                   learning_rate=0.1, max_delta_step=0,
+                                   max_depth=6, max_leaves=3,
+                                   min_child_weight=1, missing=None,
+                                   n_estimators=50, n_jobs=1, nthread=None,
+                                   objective='reg:logistic', random_state=0,
+                                   reg_alpha=0, reg_lambda=1.7708333333333335,
+                                   scale_pos_weight=1, seed=None, silent=None,
+                                   subsample=0.9, tree_method='auto',
+                                   verbose=-10, verbosity=0))],
+         verbose=False), 'friendly_errors': '{}', 'pipeline_spec': '{"objects": [{"class_name": "StandardScaler", "module": "sklearn.preprocessing", "param_args": [], "param_kwargs": {"with_mean": false, "with_std": false}, "prepared_kwargs": {}, "spec_class": "preproc"}, {"class_name": "XGBoostClassifier", "module": "automl.client.core.common.model_wrappers", "param_args": [], "param_kwargs": {"booster": "gbtree", "colsample_bytree": 1, "eta": 0.2, "gamma": 0.1, "max_depth": 6, "max_leaves": 3, "n_estimators": 50, "objective": "reg:logistic", "reg_alpha": 0, "reg_lambda": 1.7708333333333335, "subsample": 0.9, "tree_method": "auto"}, "prepared_kwargs": {}, "spec_class": "sklearn"}], "pipeline_id": "1f287694bba0cb2dd0259bac97f6b6a4b0c1bb00", "module": "sklearn.pipeline", "class_name": "Pipeline", "pipeline_name": "{ StandardScaler, XGBoostClassifier }"}', 'onnx_model': None, 'onnx_model_resource': {}, 'onnx_featurizer_model': None, 'onnx_estimator_model': None, 'accuracy': 0.9166009104704097, 'error_code': None, 'failure_reason': None, 'feature_skus': 'automatedml_sdk_guardrails', 'run_template': 'automl_child', 'run_preprocessor': 'StandardScalerWrapper', 'run_algorithm': 'XGBoostClassifier'}
+Starting the daemon thread to refresh tokens in background for process with pid = 108
+
+
+[2020-11-23T05:37:31.776233] The experiment completed successfully. Finalizing run...
+Cleaning up all outstanding Run operations, waiting 900.0 seconds
+6 items cleaning up...
+Cleanup took 1.193765640258789 seconds
+[2020-11-23T05:37:33.291801] Finished context manager injector.
+2020/11/23 05:37:36 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/status
+2020/11/23 05:37:37 Process Exiting with Code:  0

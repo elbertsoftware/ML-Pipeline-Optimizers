@@ -118,3 +118,6 @@ urllib3<=1.25.11
 websocket-client<=0.57.0
 werkzeug<=1.0.1
 zipp<=3.4.0
+xgboost==0.90
+azureml-widgets==1.18.0
+ipython==7.19.0

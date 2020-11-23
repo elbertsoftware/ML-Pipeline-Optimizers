@@ -58,8 +58,8 @@ interpret-core[required]<=0.2.1
 isodate<=0.6.0
 itsdangerous<=1.1.0
 jeepney<=0.4.3
-jinja2<=2.11.2
-jmespath<=0.10.0
+jinja2<=2.11.2azureml-widgets==1.18.0
+ipython==7.19.0
 joblib<=0.14.1
 json-logging-py<=0.2
 jsonpickle<=1.4.1
@@ -117,3 +117,6 @@ urllib3<=1.25.11
 websocket-client<=0.57.0
 werkzeug<=1.0.1
 zipp<=3.4.0
+xgboost==0.90
+azureml-widgets==1.18.0
+ipython==7.19.0

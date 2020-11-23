@@ -1,4 +1,5 @@
 .azureml
+.config
 cache
 explanation
 logs
@@ -6,4 +7,5 @@ outputs
 script/__pycache__
 
 automl.log
+azureml_automl.log
 config.json
